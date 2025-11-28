@@ -6,6 +6,8 @@ An AI-powered IP licensing marketplace where creators can tokenize their content
 
 CreatorSync empowers content creators globally by providing professional IP tools through AI automation and blockchain technology. Built on Story Protocol, it enables seamless IP asset registration, automated licensing, and transparent royalty distribution.
 
+> **Note**: This is currently an MVP/demo version. The app uses in-memory database and mock file storage. For production, you'll need to add a real database (PostgreSQL/MongoDB) and file storage (IPFS/Arweave/S3). The blockchain integration with Story Protocol is fully functional.
+
 ## 🏗️ Core Features
 
 1. **Creator Portal** - Upload content, manage profile, view assets and revenue

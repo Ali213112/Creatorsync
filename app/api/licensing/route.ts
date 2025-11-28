@@ -15,9 +15,18 @@ export async function POST(request: NextRequest) {
       )
     }
 
+    // Convert database licensing terms to AI agent format
+    const creatorTerms = {
+      usageRights: (asset.licensingTerms.commercial ? 'commercial' : 'non-commercial') as 'commercial' | 'non-commercial' | 'exclusive',
+      derivatives: asset.licensingTerms.derivatives,
+      territory: asset.licensingTerms.territory,
+      duration: asset.licensingTerms.duration,
+      price: asset.licensingTerms.price,
+    }
+
     // AI negotiation
     const negotiation = await aiAgent.negotiateTerms(
-      asset.licensingTerms,
+      creatorTerms,
       requestedTerms,
       asset.analysis
     )
