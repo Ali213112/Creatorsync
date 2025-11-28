@@ -1,0 +1,52 @@
+===========================================
+GITHUB REPOSITORY DESCRIPTION
+===========================================
+
+SHORT DESCRIPTION (for GitHub repo):
+------------------------------------
+AI-powered IP licensing marketplace built on Story Protocol blockchain. Automates content analysis, pricing, negotiation, and royalty distribution for creators worldwide.
+
+MEDIUM DESCRIPTION:
+------------------------------------
+CreatorSync is an AI-powered intellectual property licensing marketplace that enables content creators to tokenize their work (music, videos, art) and automatically handle licensing through Story Protocol blockchain. Features include AI-powered content analysis, automated pricing suggestions, smart contract negotiations, multi-language contract generation, and transparent royalty distribution.
+
+LONG DESCRIPTION (for README or About section):
+------------------------------------
+CreatorSync empowers content creators globally by providing professional IP licensing tools through AI automation and blockchain technology. Built on Story Protocol, it enables seamless IP asset registration, automated licensing agreements, and transparent royalty distribution.
+
+Key Features:
+- Creator Portal for content upload and management
+- AI Agent System for automated analysis, pricing, and negotiation
+- Story Protocol integration for on-chain IP registration
+- Licensing Marketplace for browsing and requesting content
+- Smart Contract Management for automated agreements
+- Multi-language contract generation
+- Real-time royalty distribution
+
+Tech Stack: Next.js 14, React, TypeScript, Story Protocol SDK, OpenAI/Hugging Face AI, Wagmi, Tailwind CSS
+
+===========================================
+KEYWORDS/TAGS (for GitHub topics):
+===========================================
+
+story-protocol
+ip-licensing
+blockchain
+ai-powered
+marketplace
+web3
+nextjs
+typescript
+creator-economy
+intellectual-property
+smart-contracts
+nft
+royalty-distribution
+automated-licensing
+decentralized
+
+===========================================
+SOCIAL PREVIEW TEXT:
+===========================================
+"Revolutionizing IP licensing with AI automation and Story Protocol blockchain. Empowering creators worldwide."
+
