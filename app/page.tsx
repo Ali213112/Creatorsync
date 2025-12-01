@@ -10,10 +10,10 @@ export default function Home() {
         <div className="container mx-auto px-4 py-6 flex justify-between items-center">
           <div className="text-2xl font-bold text-white drop-shadow-lg">CreatorSync</div>
           <div className="flex gap-4 items-center">
-            <Link href="/marketplace" className="text-white hover:text-yellow-200 transition-colors font-medium">
+            <Link href="/marketplace" className="text-white hover:text-gray-300 transition-colors font-medium">
               Marketplace
             </Link>
-            <Link href="/creator" className="text-white hover:text-yellow-200 transition-colors font-medium">
+            <Link href="/creator" className="text-white hover:text-gray-300 transition-colors font-medium">
               Creator Portal
             </Link>
             <ConnectButton />
@@ -52,8 +52,8 @@ export default function Home() {
       <section className="container mx-auto px-4 py-20">
         <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-8">
           <div className="glass-card p-6 rounded-2xl hover:scale-105 transition-all duration-300 hover:shadow-2xl">
-            <div className="w-12 h-12 rounded-xl bg-gradient-to-br from-purple-400 to-pink-500 flex items-center justify-center mb-4 shadow-lg">
-              <Sparkles className="w-6 h-6 text-white" />
+            <div className="w-12 h-12 rounded-xl bg-white flex items-center justify-center mb-4 shadow-lg">
+              <Sparkles className="w-6 h-6 text-black" />
             </div>
             <h3 className="text-xl font-semibold text-white mb-2">AI Agent</h3>
             <p className="text-white/80 text-sm">
@@ -61,8 +61,8 @@ export default function Home() {
             </p>
           </div>
           <div className="glass-card p-6 rounded-2xl hover:scale-105 transition-all duration-300 hover:shadow-2xl">
-            <div className="w-12 h-12 rounded-xl bg-gradient-to-br from-blue-400 to-purple-500 flex items-center justify-center mb-4 shadow-lg">
-              <Shield className="w-6 h-6 text-white" />
+            <div className="w-12 h-12 rounded-xl bg-white flex items-center justify-center mb-4 shadow-lg">
+              <Shield className="w-6 h-6 text-black" />
             </div>
             <h3 className="text-xl font-semibold text-white mb-2">IP Tokenization</h3>
             <p className="text-white/80 text-sm">
@@ -70,8 +70,8 @@ export default function Home() {
             </p>
           </div>
           <div className="glass-card p-6 rounded-2xl hover:scale-105 transition-all duration-300 hover:shadow-2xl">
-            <div className="w-12 h-12 rounded-xl bg-gradient-to-br from-pink-400 to-orange-500 flex items-center justify-center mb-4 shadow-lg">
-              <Zap className="w-6 h-6 text-white" />
+            <div className="w-12 h-12 rounded-xl bg-white flex items-center justify-center mb-4 shadow-lg">
+              <Zap className="w-6 h-6 text-black" />
             </div>
             <h3 className="text-xl font-semibold text-white mb-2">Smart Contracts</h3>
             <p className="text-white/80 text-sm">
@@ -79,8 +79,8 @@ export default function Home() {
             </p>
           </div>
           <div className="glass-card p-6 rounded-2xl hover:scale-105 transition-all duration-300 hover:shadow-2xl">
-            <div className="w-12 h-12 rounded-xl bg-gradient-to-br from-orange-400 to-yellow-500 flex items-center justify-center mb-4 shadow-lg">
-              <Globe className="w-6 h-6 text-white" />
+            <div className="w-12 h-12 rounded-xl bg-white flex items-center justify-center mb-4 shadow-lg">
+              <Globe className="w-6 h-6 text-black" />
             </div>
             <h3 className="text-xl font-semibold text-white mb-2">Global Marketplace</h3>
             <p className="text-white/80 text-sm">
@@ -95,7 +95,7 @@ export default function Home() {
         <h2 className="text-4xl font-bold text-white text-center mb-12 drop-shadow-lg">How It Works</h2>
         <div className="max-w-4xl mx-auto space-y-8">
           <div className="glass-card p-6 rounded-2xl flex gap-6 items-start hover:scale-[1.02] transition-all duration-300">
-            <div className="w-14 h-14 rounded-full bg-gradient-to-br from-purple-500 to-pink-500 flex items-center justify-center font-bold text-xl text-white flex-shrink-0 shadow-lg">
+            <div className="w-14 h-14 rounded-full bg-white flex items-center justify-center font-bold text-xl text-black flex-shrink-0 shadow-lg">
               1
             </div>
             <div>
@@ -106,7 +106,7 @@ export default function Home() {
             </div>
           </div>
           <div className="glass-card p-6 rounded-2xl flex gap-6 items-start hover:scale-[1.02] transition-all duration-300">
-            <div className="w-14 h-14 rounded-full bg-gradient-to-br from-blue-500 to-purple-500 flex items-center justify-center font-bold text-xl text-white flex-shrink-0 shadow-lg">
+            <div className="w-14 h-14 rounded-full bg-white flex items-center justify-center font-bold text-xl text-black flex-shrink-0 shadow-lg">
               2
             </div>
             <div>
@@ -117,7 +117,7 @@ export default function Home() {
             </div>
           </div>
           <div className="glass-card p-6 rounded-2xl flex gap-6 items-start hover:scale-[1.02] transition-all duration-300">
-            <div className="w-14 h-14 rounded-full bg-gradient-to-br from-pink-500 to-orange-500 flex items-center justify-center font-bold text-xl text-white flex-shrink-0 shadow-lg">
+            <div className="w-14 h-14 rounded-full bg-white flex items-center justify-center font-bold text-xl text-black flex-shrink-0 shadow-lg">
               3
             </div>
             <div>
@@ -128,7 +128,7 @@ export default function Home() {
             </div>
           </div>
           <div className="glass-card p-6 rounded-2xl flex gap-6 items-start hover:scale-[1.02] transition-all duration-300">
-            <div className="w-14 h-14 rounded-full bg-gradient-to-br from-orange-500 to-yellow-500 flex items-center justify-center font-bold text-xl text-white flex-shrink-0 shadow-lg">
+            <div className="w-14 h-14 rounded-full bg-white flex items-center justify-center font-bold text-xl text-black flex-shrink-0 shadow-lg">
               4
             </div>
             <div>

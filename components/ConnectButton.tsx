@@ -53,7 +53,7 @@ export function ConnectButton() {
             href="https://metamask.io/download/"
             target="_blank"
             rel="noopener noreferrer"
-            className="text-yellow-200 text-xs hover:underline flex items-center gap-1"
+            className="text-white text-xs hover:underline flex items-center gap-1"
           >
             Install MetaMask <ExternalLink className="w-3 h-3" />
           </a>
@@ -70,7 +70,7 @@ export function ConnectButton() {
         </span>
         <button
           onClick={() => disconnect()}
-          className="glass text-white px-4 py-2 rounded-xl hover:scale-105 transition-all duration-300 hover:bg-red-500/30"
+          className="glass text-white px-4 py-2 rounded-xl hover:scale-105 transition-all duration-300 hover:bg-white/20"
         >
           Disconnect
         </button>

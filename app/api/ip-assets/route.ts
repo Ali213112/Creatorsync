@@ -25,6 +25,8 @@ export async function GET(request: NextRequest) {
 export async function POST(request: NextRequest) {
   try {
     const body = await request.json()
+    console.log('📝 Creating IP asset:', { body })
+    
     const {
       id,
       creatorId,
@@ -39,13 +41,20 @@ export async function POST(request: NextRequest) {
       createdAt,
     } = body
 
-    // Ensure creator exists
-    const creator = db.getCreator(creatorId)
+    // Ensure creator exists - if not, create a basic one
+    let creator = db.getCreator(creatorId)
     if (!creator) {
-      return NextResponse.json(
-        { error: 'Creator not found' },
-        { status: 404 }
-      )
+      console.log('⚠️ Creator not found, creating basic creator:', creatorId)
+      // Create a basic creator if it doesn't exist
+      creator = db.createCreator({
+        id: creatorId,
+        walletAddress: creatorId, // Use creatorId as wallet address
+        name: 'Unknown Creator',
+        bio: '',
+        location: '',
+        language: 'en',
+        createdAt: Date.now(),
+      })
     }
 
     const asset = db.createIPAsset({
@@ -62,11 +71,12 @@ export async function POST(request: NextRequest) {
       createdAt: createdAt || Date.now(),
     })
 
+    console.log('✅ IP asset created successfully:', asset.id)
     return NextResponse.json({ success: true, asset })
-  } catch (error) {
-    console.error('Error creating IP asset:', error)
+  } catch (error: any) {
+    console.error('❌ Error creating IP asset:', error)
     return NextResponse.json(
-      { error: 'Failed to create asset' },
+      { error: 'Failed to create asset', details: error.message },
       { status: 500 }
     )
   }
